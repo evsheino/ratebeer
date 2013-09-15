@@ -1,4 +1,11 @@
 Ratebeer::Application.routes.draw do
+
+  root :to => 'breweries#index'
+
+  get 'kaikki_bisset', to: 'beers#index'
+
+  get 'ratings', to: 'ratings#index'
+
   resources :beers
 
   resources :breweries
@@ -43,7 +50,7 @@ Ratebeer::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

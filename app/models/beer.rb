@@ -3,7 +3,8 @@ class Beer < ActiveRecord::Base
   has_many :ratings, dependent: :destroy
 
   def average_rating
-    ratings.average(:score)
+    ratings.inject(0) {|sum, rating| sum + rating.score}.to_f / ratings.count
+    #ratings.average(:score)
   end
 
   def to_s

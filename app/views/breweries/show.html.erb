@@ -7,6 +7,13 @@
 </p>
 
 <p>Beers: <%= @brewery.beers.count %></p>
+<p>
+  <% if @brewery.ratings.empty? %>
+      No beers have yet been rated.
+  <% else %>
+      Brewery has <%= pluralize(@brewery.ratings.count, 'rating') %>, average: <%= @brewery.average_rating %>
+  <% end %>
+</p>
 
 <p>
   <% @brewery.beers.each do |beer| %>

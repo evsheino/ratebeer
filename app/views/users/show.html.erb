@@ -9,5 +9,12 @@
   <% end %>
 </ul>
 
+<strong>Member of:</strong>
+<p>
+  <% @user.beer_clubs.each do |club| %>
+    <%= link_to club, club %>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

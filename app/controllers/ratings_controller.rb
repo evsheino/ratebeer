@@ -11,9 +11,9 @@ class RatingsController < ApplicationController
   end
 
   def create
-    Rating.create(rating_params)
-
-    session[:last_rating] = "#{Beer.find(params[:rating][:beer_id])} #{params[:rating][:score]} points"
+    rating = Rating.new(rating_params)
+    rating.user = current_user
+    rating.save
 
     redirect_to ratings_path
   end
@@ -21,7 +21,7 @@ class RatingsController < ApplicationController
   def destroy
     @rating.destroy
     respond_to do |format|
-      format.html { redirect_to ratings_url }
+      format.html { redirect_to :back }
       format.json { head :no_content }
     end
   end

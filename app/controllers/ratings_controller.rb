@@ -19,7 +19,7 @@ class RatingsController < ApplicationController
   end
 
   def destroy
-    @rating.destroy
+    @rating.destroy if current_user == @rating.user
     respond_to do |format|
       format.html { redirect_to :back }
       format.json { head :no_content }

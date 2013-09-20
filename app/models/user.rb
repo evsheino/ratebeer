@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   validates_uniqueness_of :username
   validates_length_of :password, :minimum => 4
+  validates_length_of :username, :minimum => 3, :maximum => 15
 
   def to_s
     username

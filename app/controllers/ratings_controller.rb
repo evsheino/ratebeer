@@ -11,11 +11,16 @@ class RatingsController < ApplicationController
   end
 
   def create
-    rating = Rating.new(rating_params)
-    rating.user = current_user
-    rating.save
-
-    redirect_to ratings_path
+    @rating = Rating.new(rating_params)
+    @rating.user = current_user
+    respond_to do |format|
+      if @rating.save
+        format.html { redirect_to @rating.user, notice: 'Rating was successfully created.' }
+      else
+        @beers = Beer.all
+        format.html { render action: 'new' }
+      end
+    end
   end
 
   def destroy

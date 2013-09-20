@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
+  validates_uniqueness_of :username
+  validates_length_of :password, :minimum => 4
+
   def to_s
     username
   end

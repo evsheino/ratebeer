@@ -5,7 +5,7 @@ class Beer < ActiveRecord::Base
   has_many :ratings, dependent: :destroy
   has_many :raters, through: :ratings, source: :user
 
-  validates :name, allow_blank: false
+  validates_presence_of :name
 
   def to_s
     "#{brewery.name} #{name}"

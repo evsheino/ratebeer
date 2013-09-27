@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories.rb" afterPath="$PROJECT_DIR$/spec/factories.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +33,7 @@
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/owned_card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379974303681" ignored="false" />
     <file path="/owned_card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379957156046" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876708560" ignored="false" />
-    <file path="/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380305181936" ignored="false" />
+    <file path="/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380305419877" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018622675" ignored="false" />
     <file path="/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018312698" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380024859741" ignored="false" />
@@ -104,7 +101,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.67639256">
+            <state line="21" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="0.4734748">
               <folding />
             </state>
           </provider>
@@ -713,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.67639256">
+        <state line="21" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="0.4734748">
           <folding />
         </state>
       </provider>

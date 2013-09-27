@@ -8,14 +8,14 @@ describe User do
     expect(User.count).to eq(0)
   end
 
-  it "is not save without a password" do
+  it "is not saved without a password" do
     user = User.create username: "Pekka"
 
     expect(user.valid?).to be(false)
     expect(User.count).to eq(0)
   end
 
-  it "is not save without a proper password" do
+  it "is not saved without a proper password" do
     user = User.create username: "Pekka",
                        password: "lettersonly",
                        password_confirmation: "lettersonly"

@@ -13,6 +13,11 @@ class User < ActiveRecord::Base
                                    message: "must be at least 4 characters and include one number and one letter."}
   validates_length_of :username, :minimum => 3, :maximum => 15
 
+  def favorite_beer
+    return nil if ratings.empty?
+    ratings.order(:score).last.beer
+  end
+
   def to_s
     username
   end

@@ -3,6 +3,7 @@ class Brewery < ActiveRecord::Base
 
   has_many :beers, dependent: :destroy
   has_many :ratings, through: :beers
+  has_many :raters, through: :beers
 
   validates_presence_of :name
   validate :validate_year

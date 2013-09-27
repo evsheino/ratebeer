@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/brewery.rb" afterPath="$PROJECT_DIR$/app/models/brewery.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380304664377" ignored="false" />
-    <file path="/brewery.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379797993064" ignored="false" />
+    <file path="/brewery.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380308043892" ignored="false" />
     <file path="/beer.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279506280" ignored="false" />
     <file path="/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018152143" ignored="false" />
     <file path="/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380017566793" ignored="false" />
@@ -33,7 +36,7 @@
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/owned_card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379974303681" ignored="false" />
     <file path="/owned_card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379957156046" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876708560" ignored="false" />
-    <file path="/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380305419877" ignored="false" />
+    <file path="/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380307976465" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018622675" ignored="false" />
     <file path="/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018312698" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380024859741" ignored="false" />
@@ -76,7 +79,7 @@
     <file path="/Ruby Console" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379974702100" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018156340" ignored="false" />
     <file path="/Gemfile" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279691634" ignored="false" />
-    <file path="/user_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380302893052" ignored="false" />
+    <file path="/user_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380311166883" ignored="false" />
     <file path="/beer_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279324817" ignored="false" />
     <file path="/factories.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380302270310" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,10 +101,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="0.4734748">
+            <state line="35" column="8" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,25 +113,16 @@
       <file leaf-file-name="factories.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/factories.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="18" column="5" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="7" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beer_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/beer_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+            <state line="124" column="5" selection-start="3688" selection-end="3688" vertical-scroll-proportion="0.5265252">
               <folding />
             </state>
           </provider>
@@ -165,13 +159,13 @@
         <option value="$PROJECT_DIR$/app/models/rating.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/brewery.rb" />
         <option value="$PROJECT_DIR$/spec/models/beer_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/beer.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/brewery.rb" />
         <option value="$PROJECT_DIR$/spec/factories.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -660,11 +654,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/breweries_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="49" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" />
@@ -672,7 +661,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" />
+        <state line="14" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -684,19 +675,7 @@
     </entry>
     <entry file="file://C:/Ruby200/lib/ruby/gems/2.0.0/gems/factory_girl-4.2.0/lib/factory_girl/strategy/create.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15782493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="7" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+        <state line="7" column="10" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15782493">
           <folding />
         </state>
       </provider>
@@ -708,9 +687,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.13527851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="747" selection-end="747" vertical-scroll-proportion="0.4734748">
+        <state line="35" column="8" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="5" selection-start="3688" selection-end="3688" vertical-scroll-proportion="0.5265252">
           <folding />
         </state>
       </provider>

@@ -21,10 +21,19 @@ class User < ActiveRecord::Base
   # Get the style that has the highest average rating among beers the user has rated.
   def favorite_style
     return nil if ratings.empty?
-    Beer.joins(:raters).group('users.id', :style)
-      .having('users.id = ?', id)
-      .order('SUM(score)/COUNT(score) DESC')
-      .first[:style]
+    Beer.joins(:raters).group('users.id', :style).
+        having('users.id = ?', id).
+        order('SUM(score)/COUNT(score) DESC').
+        pluck(:style).first
+  end
+
+  # Get the brewery that has the highest average rating among beers the user has rated.
+  def favorite_brewery
+    return nil if ratings.empty?
+    Brewery.joins(:raters).group('users.id', :id).
+        having('users.id = ?', id).
+        order('SUM(score)/COUNT(score) DESC').
+        first
   end
 
   def to_s

@@ -21,6 +21,11 @@ FactoryGirl.define do
   factory :beer do
     name "anonymous"
     brewery
-    style "Lager"
+    style "Porter"
+  end
+
+  factory :beer_stub, :class => Beer do
+    name "anonymous"
+    brewery
   end
 end

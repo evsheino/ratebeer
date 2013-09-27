@@ -18,6 +18,18 @@ class User < ActiveRecord::Base
     ratings.order(:score).last.beer
   end
 
+  # Get the style that has the highest average rating among beers the user has rated.
+  def favorite_style
+    return nil if ratings.empty?
+    qry = ActiveRecord::Base.connection.execute(
+        "SELECT style FROM beers b INNER JOIN ratings r ON b.id = r.beer_id
+        INNER JOIN users u ON u.id = r.user_id
+        GROUP BY u.id, style
+        HAVING u.id = #{id}
+        ORDER BY SUM(score)/COUNT(score) DESC LIMIT 1"
+    ).first['style']
+  end
+
   def to_s
     username
   end

@@ -2,7 +2,10 @@
 
 <h2><%= @user.username %></h2>
 
-<%= "#{@user.username} has given #{pluralize(@user.ratings.count, 'ratings')}, average #{@user.average_rating}" %>
+<p>
+  <%= "#{@user.username} has given #{pluralize(@user.ratings.count, 'ratings')}, average #{@user.average_rating}.
+              Favorite style is #{@user.favorite_style}." %></p>
+
 <ul>
   <% @user.ratings.each do |rating| %>
       <li> <%= rating %>

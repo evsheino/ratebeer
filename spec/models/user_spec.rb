@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe User do
+  include OwnTestHelper
+
   it "is not saved with a username too short" do
     user = User.create username: "gg"
 
@@ -122,19 +124,5 @@ describe User do
 
       expect(user.favorite_brewery).to eq(brewery2)
     end
-  end
-
-  def create_beers_with_ratings(*scores, user, style)
-    beers = []
-    scores.each do |score|
-      beers << create_beer_with_rating(score, user, style)
-    end
-    beers
-  end
-
-  def create_beer_with_rating(score,  user, style)
-    beer = FactoryGirl.create(:beer_stub, style: style)
-    FactoryGirl.create(:rating, :score => score,  :beer => beer, :user => user)
-    beer
   end
 end

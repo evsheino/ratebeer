@@ -25,4 +25,11 @@ describe "Rating" do
     expect(beer1.ratings.count).to eq(1)
     expect(beer1.average_rating).to eq(15.0)
   end
+
+  it "is deleted when the rater deletes it" do
+    beer = create_beer_with_rating 20, user, 'Lager'
+
+    visit user_path(user)
+    expect{click_link 'Delete'}.to change{Rating.count}.from(1).to(0)
+  end
 end

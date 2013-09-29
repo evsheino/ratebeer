@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/users_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/ratings_spec.rb" afterPath="$PROJECT_DIR$/spec/features/ratings_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,7 +11,7 @@
     <file path="/brewery.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380308043892" ignored="false" />
     <file path="/beer.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279506280" ignored="false" />
     <file path="/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380386021421" ignored="false" />
-    <file path="/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380389210235" ignored="false" />
+    <file path="/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380447167468" ignored="false" />
     <file path="/a.rxml" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274076485" ignored="false" />
     <file path="/a.html" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274049810" ignored="false" />
     <file path="/a.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274077389" ignored="false" />
@@ -82,8 +82,8 @@
     <file path="/factories.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380302270310" ignored="false" />
     <file path="/breweries_page_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380388038060" ignored="false" />
     <file path="/users_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380391711695" ignored="false" />
-    <file path="/ratings_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380389588293" ignored="false" />
-    <file path="/ratings_page_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380391898786" ignored="false" />
+    <file path="/ratings_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380447340331" ignored="false" />
+    <file path="/ratings_page_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380391901229" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,10 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ratings_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ratings_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+            <state line="15" column="15" selection-start="489" selection-end="489" vertical-scroll-proportion="0.33819628">
               <folding />
             </state>
           </provider>
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratings_page_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ratings_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/ratings_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="699" selection-end="699" vertical-scroll-proportion="0.4734748">
+            <state line="21" column="43" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,19 +180,19 @@
         <option value="$PROJECT_DIR$/app/views/breweries/index.html.erb" />
         <option value="$PROJECT_DIR$/spec/features/breweries_page_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/spec/features/ratings_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/helpers/own_test_helper.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/ratings_page_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/spec/features/ratings_spec.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="55" />
     <option name="y" value="-8" />
-    <option name="width" value="1554" />
+    <option name="width" value="1553" />
     <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -251,7 +251,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,51 +273,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,7 +549,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1554" height="916" extended-state="6" />
+    <frame x="55" y="-8" width="1553" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -589,7 +557,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29088473" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29107982" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -720,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="240" selection-end="240" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/breweries_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.42838195">
@@ -748,20 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/helpers/own_test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/users_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="23" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
@@ -771,7 +718,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/ratings_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="699" selection-end="699" vertical-scroll-proportion="0.4734748">
+        <state line="21" column="43" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/helpers/own_test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="379" selection-end="379" vertical-scroll-proportion="0.2802198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="489" selection-end="489" vertical-scroll-proportion="0.33819628">
           <folding />
         </state>
       </provider>

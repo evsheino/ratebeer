@@ -21,5 +21,3 @@ test:
 production:
   adapter: postgresql
   database: ratebeer_<%= Rails.env %>
-  pool: 5
-  timeout: 5000

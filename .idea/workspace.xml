@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="" />
+    <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.ci" afterPath="$PROJECT_DIR$/Gemfile.ci" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+    </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380466020831" ignored="false" />
@@ -115,19 +118,19 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="3" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="3" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile.ci" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile.ci" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile.ci">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="-13.6">
+            <state line="3" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.06995885">
               <folding />
             </state>
           </provider>
@@ -145,9 +148,9 @@
       <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+            <state line="4" column="7" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1380483861026" expanded="true" signature="46:109" placeholder="on:" />
+                <marker date="1380484336660" expanded="true" signature="303:513" placeholder="on:" />
               </folding>
             </state>
           </provider>
@@ -162,10 +165,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.36074272">
+            <state line="16" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,9 +208,9 @@
         <option value="$PROJECT_DIR$/app/views/memberships/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Gemfile.ci" />
       </list>
     </option>
@@ -722,17 +725,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+        <state line="4" column="7" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1380483861026" expanded="true" signature="46:109" placeholder="on:" />
+            <marker date="1380484336660" expanded="true" signature="303:513" placeholder="on:" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,19 +739,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.ci">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="-13.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.36074272">
+        <state line="3" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.06995885">
           <folding />
         </state>
       </provider>

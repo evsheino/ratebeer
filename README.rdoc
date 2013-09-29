@@ -1,2 +1,4 @@
 == README
+[![Build Status](https://travis-ci.org/mluukkai/ratebeer.png)](https://travis-ci.org/mluukkai/ratebeer)
+
 http://limitless-island-7633.herokuapp.com/

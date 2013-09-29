@@ -1,4 +1,4 @@
 == README
-[![Build Status](https://travis-ci.org/evsheino/ratebeer.png)](https://travis-ci.org/evsheino/ratebeer)
+{<img src="https://travis-ci.org/evsheino/ratebeer.png?branch=master" alt="Build Status" />}[https://travis-ci.org/evsheino/ratebeer]
 
 http://limitless-island-7633.herokuapp.com/

@@ -3,9 +3,7 @@ require 'spec_helper'
 describe "User" do
   include OwnTestHelper
 
-  before :each do
-    FactoryGirl.create :user
-  end
+  let!(:user) { FactoryGirl.create :user }
 
   describe "who has signed up" do
     it "can sign in with the right credentials" do
@@ -20,6 +18,23 @@ describe "User" do
 
       expect(current_path).to eq(signin_path)
       expect(page).to have_content 'Username and password do not match!'
+    end
+
+    it "has a favorite style on his/her page" do
+      sign_in 'Pekka', 'foobar1'
+
+      create_beer_with_rating 20, user, 'Lager'
+      create_beer_with_rating 19, user, 'Porter'
+      visit user_path(user)
+
+      expect(page).to have_content 'Favorite style is Lager'
+    end
+
+    it "has a favorite brewery on his/her page" do
+      create_beer_with_rating 20, user, 'Lager'
+      visit user_path(user)
+
+      expect(page).to have_content 'favorite brewery is anonymous'
     end
   end
 

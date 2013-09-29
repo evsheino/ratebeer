@@ -31,6 +31,7 @@ describe "User" do
     end
 
     it "has a favorite brewery on his/her page" do
+      sign_in 'Pekka', 'foobar1'
       create_beer_with_rating 20, user, 'Lager'
       visit user_path(user)
 

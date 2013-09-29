@@ -1,4 +1,5 @@
 == README
 {<img src="https://travis-ci.org/evsheino/ratebeer.png?branch=master" alt="Build Status" />}[https://travis-ci.org/evsheino/ratebeer]
+{<img src="https://codeclimate.com/github/evsheino/ratebeer.png" />}[https://codeclimate.com/github/evsheino/ratebeer]
 
 http://limitless-island-7633.herokuapp.com/

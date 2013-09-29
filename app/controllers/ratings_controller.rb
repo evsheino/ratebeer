@@ -1,4 +1,5 @@
 class RatingsController < ApplicationController
+  before_filter :ensure_that_signed_in, :except => [:index]
   before_action :set_rating, only: [:destroy]
 
   def index

@@ -15,6 +15,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', :require => false
+  gem 'webmock'
 end
 
 group :production do
@@ -59,3 +60,5 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
+gem 'httparty'

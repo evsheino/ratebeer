@@ -13,13 +13,15 @@ Ratebeer::Application.routes.draw do
 
   root :to => 'breweries#index'
 
-  get 'kaikki_bisset', to: 'beers#index'
-
   resources :ratings, :only => [:index, :new, :create, :destroy]
 
   resources :beers
 
   resources :breweries
+
+  get 'places' => 'places#index'
+  post 'places' => 'places#search'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

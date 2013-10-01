@@ -2,28 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea705e26-fbef-4361-9f29-6a229af6e22b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.last_run.json" afterPath="$PROJECT_DIR$/coverage/.last_run.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.resultset.json" afterPath="$PROJECT_DIR$/coverage/.resultset.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.ci" afterPath="$PROJECT_DIR$/Gemfile.ci" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/index.html" afterPath="$PROJECT_DIR$/coverage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/users_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ratebeer.iml" afterPath="$PROJECT_DIR$/.idea/ratebeer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380466020831" ignored="false" />
+    <file path="/Dummy.txt" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380652287776" ignored="false" />
     <file path="/brewery.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380308043892" ignored="false" />
     <file path="/beer.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279506280" ignored="false" />
-    <file path="/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380477383998" ignored="false" />
-    <file path="/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380467384723" ignored="false" />
+    <file path="/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380662070796" ignored="false" />
+    <file path="/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380492363362" ignored="false" />
     <file path="/a.rxml" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274076485" ignored="false" />
     <file path="/a.html" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274049810" ignored="false" />
     <file path="/a.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274077389" ignored="false" />
     <file path="/a.xml" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274070938" ignored="false" />
-    <file path="/routes.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876232661" ignored="false" />
+    <file path="/routes.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380570922327" ignored="false" />
     <file path="/ratings_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380477944356" ignored="false" />
     <file path="/rating.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379704998301" ignored="false" />
-    <file path="/application.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380017520209" ignored="false" />
-    <file path="/new.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379881187026" ignored="false" />
-    <file path="/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380024859741" ignored="false" />
+    <file path="/application.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380575995492" ignored="false" />
+    <file path="/new.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380563043312" ignored="false" />
+    <file path="/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380492207314" ignored="false" />
     <file path="/beers_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379253755954" ignored="false" />
     <file path="/breweries_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380478464788" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/expansion_cards_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379273196502" ignored="false" />
@@ -37,8 +44,8 @@
     <file path="/owned_card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379957156046" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/models/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876708560" ignored="false" />
     <file path="/user.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380307976465" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/app/models/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018622675" ignored="false" />
-    <file path="/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018312698" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/models/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380556627316" ignored="false" />
+    <file path="/card.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380495514592" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380024859741" ignored="false" />
     <file path="/a.js" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274063428" ignored="false" />
     <file path="/a.less" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379274092942" ignored="false" />
@@ -48,14 +55,14 @@
     <file path="$PROJECT_DIR$/../mtgcollection/Gemfile" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380479700192" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/users_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380017407057" ignored="false" />
     <file path="/users_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380485979375" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/application_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379628096130" ignored="false" />
-    <file path="/application_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379627970722" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/application_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559683219" ignored="false" />
+    <file path="/application_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559682416" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/helpers/sessions_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379367433107" ignored="false" />
     <file path="/sessions_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380478783406" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/app/views/layouts/application.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380017524815" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/config/routes.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876237828" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/sessions_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379367509213" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379709221151" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/views/layouts/application.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559784673" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/config/routes.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380570909614" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/controllers/sessions_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565126988" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380562931965" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/helpers/application_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379366777791" ignored="false" />
     <file path="/rating_average.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379600455698" ignored="false" />
     <file path="/membership.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379670353346" ignored="false" />
@@ -63,13 +70,13 @@
     <file path="/memberships_controller.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379703478318" ignored="false" />
     <file path="/20130920092018_create_memberships.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379693121807" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/users/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379875754125" ignored="false" />
-    <file path="/a.dummy" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380478862072" ignored="false" />
+    <file path="/a.dummy" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559771781" ignored="false" />
     <file path="/edit.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379711813680" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/users/new.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379875781525" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876545793" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/owned_cards/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379882383852" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/users/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380017573962" ignored="false" />
-    <file path="$PROJECT_DIR$/../mtgcollection/app/views/expansions/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876530837" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/views/expansions/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380492362400" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/expansion_cards/show.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379876537901" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/owned_cards/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379974740621" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/owned_cards/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380024849545" ignored="false" />
@@ -78,17 +85,39 @@
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/owned_cards/new.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379881187886" ignored="false" />
     <file path="/Ruby Console" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1379974702100" ignored="false" />
     <file path="$PROJECT_DIR$/../mtgcollection/app/views/cards/index.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380018156340" ignored="false" />
-    <file path="/Gemfile" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279691634" ignored="false" />
+    <file path="/Gemfile" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380663618589" ignored="false" />
     <file path="/user_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380391073146" ignored="false" />
     <file path="/beer_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380279324817" ignored="false" />
-    <file path="/factories.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380302270310" ignored="false" />
+    <file path="/factories.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565537968" ignored="false" />
     <file path="/breweries_page_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380388038060" ignored="false" />
-    <file path="/users_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380468040501" ignored="false" />
+    <file path="/users_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565933865" ignored="false" />
     <file path="/ratings_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380447340331" ignored="false" />
     <file path="/ratings_page_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380391901229" ignored="false" />
     <file path="/beers_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380448040627" ignored="false" />
     <file path="/20130929180835_add_admin_to_users.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380478139475" ignored="false" />
     <file path="/database.yml" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380481005852" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380486910320" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/factories.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565577210" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/models/card_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380556620237" ignored="false" />
+    <file path="/card_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380556602886" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/views/expansions/_form.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380492207314" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/db/schema.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380492339350" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/spec_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380493916503" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/features/users_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565976305" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/support/helpers/own_test_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559166794" ignored="false" />
+    <file path="/temp.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380559890269" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/spec/support/helpers/browser_test_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380561812963" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/coverage/index.html" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380565973291" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/log/test.log" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380563308603" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/coverage/.resultset.json" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380563308603" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/log/development.log" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380571089741" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/app/views/sessions/new.html.erb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380563043312" ignored="false" />
+    <file path="/browser_test_helper.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380561812963" ignored="false" />
+    <file path="$PROJECT_DIR$/../mtgcollection/Gemfile.ci" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380566711494" ignored="false" />
+    <file path="/place.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380574937582" ignored="false" />
+    <file path="/places_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380662026521" ignored="false" />
+    <file path="/beermapping_api.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380662527257" ignored="false" />
+    <file path="/beermapping_api_spec.rb" changelist="ea705e26-fbef-4361-9f29-6a229af6e22b" time="1380666717416" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,46 +137,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="beermapping_api.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/beermapping_api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="18" column="4" selection-start="495" selection-end="495" vertical-scroll-proportion="0.40583554">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/features/users_spec.rb">
+      <file leaf-file-name="places_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/features/places_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.9244032">
+            <state line="15" column="98" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <file leaf-file-name="beermapping_api_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/lib/beermapping_api_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beers_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="48" selection-end="112" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,22 +186,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/beer_clubs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/beers/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/breweries/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/memberships/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/Gemfile.ci" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/place.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/places_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/places/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.ci" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/lib/beermapping_api_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/places_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/beermapping_api.rb" />
       </list>
     </option>
   </component>
@@ -273,7 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,24 +299,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,13 +310,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mtgcollection" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -569,10 +562,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29510397" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16633132" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -581,6 +573,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -647,117 +640,115 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="532" selection-end="532" vertical-scroll-proportion="-10.461538">
+        <state line="22" column="34" selection-start="452" selection-end="452" vertical-scroll-proportion="0.4960212">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/breweries/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="517" selection-end="517" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beers/show.html.erb">
+    <entry file="file://C:/Ruby200/lib/ruby/gems/2.0.0/gems/minitest-4.7.5/lib/minitest/mock.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="40" selection-start="5033" selection-end="5038" vertical-scroll-proportion="0.23342176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="278" selection-end="278" vertical-scroll-proportion="0.27055702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/breweries_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.20291777">
+        <state line="8" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="48" selection-end="89" vertical-scroll-proportion="0.06882591">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+    <entry file="file://$PROJECT_DIR$/spec/features/breweries_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.ci">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/views/places/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.303155">
+        <state line="19" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="-12.423077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.067639254">
+        <state line="17" column="2" selection-start="360" selection-end="373" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile.ci">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="581" selection-end="581" vertical-scroll-proportion="0.39697802">
+        <state line="17" column="15" selection-start="373" selection-end="373" vertical-scroll-proportion="-11.56">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="23" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/place.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="48" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="6" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.13527851">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/spec/lib/beermapping_api_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/places_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+        <state line="15" column="98" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/beermapping_api.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/users_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="32" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.9244032">
+        <state line="18" column="4" selection-start="495" selection-end="495" vertical-scroll-proportion="0.40583554">
           <folding />
         </state>
       </provider>

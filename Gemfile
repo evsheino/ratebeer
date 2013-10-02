@@ -62,3 +62,5 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'debugger', group: [:development, :test]
 
 gem 'httparty'
+
+gem "rails-settings-cached", "0.3.1"

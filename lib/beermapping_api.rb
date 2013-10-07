@@ -1,7 +1,9 @@
 module BeermappingAPI
 
+  WEBSERVICE_URL = 'http://beermapping.com/webservice'
   LOCQUERY_SERVICE = 'locquery'
   LOCCITY_SERVICE = 'loccity'
+  LOCSCORE_SERVICE = 'locscore'
 
   def self.places_in(city)
     Place
@@ -13,9 +15,13 @@ module BeermappingAPI
   end
 
   def self.place(place_id)
-    Rails.cache.write(place_id, fetch_place(place_id)) unless Rails.cache.exist?(place_id)
+    return Rails.cache.read(place_id) if Rails.cache.exist?(place_id)
 
-    Rails.cache.read(place_id)
+    place = Place.new(fetch_data(LOCQUERY_SERVICE, place_id).merge(fetch_scores(place_id)))
+
+    Rails.cache.write(place_id, place)
+
+    place
   end
 
   private
@@ -23,10 +29,10 @@ module BeermappingAPI
     def self.cache_city(city)
       places = fetch_places_in(city)
       Rails.cache.write(city, places)
+    end
 
-      places.each do |place|
-        Rails.cache.write(place.id, place) unless Rails.cache.exist?(place.id)
-      end
+    def self.fetch_scores(place_id)
+      fetch_data(LOCSCORE_SERVICE, place_id)
     end
 
     def self.fetch_place(place_id)
@@ -37,13 +43,19 @@ module BeermappingAPI
       fetch_places(LOCCITY_SERVICE, city)
     end
 
-    def self.fetch_places(service, query)
-      url = "http://beermapping.com/webservice/#{service}/#{key}/"
+    def self.fetch_data(service, query)
+      return {} if query == '' || query.nil?
 
+      url = "#{WEBSERVICE_URL}/#{service}/#{key}/"
       response = HTTParty.get "#{url}#{query.to_s.gsub(' ', '%20')}"
-      places = response.parsed_response["bmp_locations"]["location"]
 
-      return [] if places.is_a?(Hash) and places['id'].nil?
+      response.parsed_response["bmp_locations"]["location"]
+    end
+
+    def self.fetch_places(service, query)
+      places = fetch_data(service, query)
+
+      return [] if places.is_a?(Hash) && places['id'].nil?
 
       places = [places] if places.is_a?(Hash)
       places.inject([]) do | set, place |

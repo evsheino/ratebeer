@@ -57,7 +57,7 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     if signed_in?(@user)
-      session[:user_id] = nil # There has to be a better way.
+      session[:user_id] = nil
       @user.destroy
       respond_to do |format|
         format.html { redirect_to root_path }

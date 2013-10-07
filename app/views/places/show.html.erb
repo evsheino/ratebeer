@@ -2,4 +2,14 @@
 
 <p><%= "#{@place.street}, #{@place.zip} #{@place.city}, #{@place.country}" %></p>
 
-<iframe src="<%= @place.blogmap %>"></iframe>
+<h2>Scores</h2>
+<ul class="scores">
+  <li>Selection: <%= @place.selection %></li>
+  <li>Service: <%= @place.service %></li>
+  <li>Atmosphere: <%= @place.atmosphere %></li>
+  <li>Food: <%= @place.atmosphere %></li>
+  <li>Overall score: <%= @place.overall %></li>
+  <li>Review count: <%= @place.reviewcount %></li>
+</ul>
+
+<iframe class="beermap" src="<%= @place.blogmap %>"></iframe>

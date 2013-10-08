@@ -2,9 +2,17 @@
 
 <p>
   <%= "#{@user.username} has given #{pluralize(@user.ratings.count, 'ratings')}, average #{@user.average_rating}.
-              Favorite style is #{@user.favorite_style} and favorite brewery is #{@user.favorite_brewery}" %></p>
+              Favorite style is #{@user.favorite_style}"%>
+</p>
+<% benchmark('oma') do %>
+    <p><%=@user.favorite_brewery%></p>
+<% end %>
 
-<ul>
+<% benchmark('toinen') do %>
+    <p><%=@user.favorite_brewery2%></p>
+<% end %>
+
+    <ul>
   <% @user.ratings.each do |rating| %>
       <li> <%= rating %>
       <% if signed_in?(@user) %>

@@ -36,6 +36,24 @@ class User < ActiveRecord::Base
         first
   end
 
+  def favorite_brewery2
+    return nil if ratings.empty?
+    brewery_rating_pairs = rated_breweries.inject([]) do |pairs, brewery|
+      pairs << [brewery, brewery_rating_average(brewery)]
+    end
+    brewery_rating_pairs.sort_by { |s| s.last }.last.first
+  end
+
+  def rated_breweries
+    ratings.map{ |r|r.beer.brewery }.uniq
+  end
+
+  def brewery_rating_average(brewery)
+    ratings_of_brewery = ratings.select{ |r|r.beer.brewery==brewery }
+    return 0 if ratings_of_brewery.empty?
+    ratings_of_brewery.inject(0.0){ |sum ,r| sum+r.score } / ratings_of_brewery.count
+  end
+
   def to_s
     username
   end

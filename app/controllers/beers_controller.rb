@@ -1,6 +1,8 @@
 class BeersController < ApplicationController
   before_filter :ensure_that_signed_in, :except => [:index, :show]
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
+  before_action :set_styles, only: [:new, :create]
+  before_action :set_breweries, only: [:new, :create]
 
   # GET /beers
   # GET /beers.json
@@ -23,8 +25,6 @@ class BeersController < ApplicationController
   # GET /beers/new
   def new
     @beer = Beer.new
-    @breweries = Brewery.all
-    @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
   end
 
   # GET /beers/1/edit
@@ -75,6 +75,14 @@ class BeersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_beer
       @beer = Beer.find(params[:id])
+    end
+
+    def set_styles
+      @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
+    end
+
+    def set_breweries
+      @breweries = Brewery.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

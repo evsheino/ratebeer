@@ -23,8 +23,8 @@ describe "User" do
     it "has a favorite style on his/her page" do
       sign_in 'Pekka', 'foobar1'
 
-      create_beer_with_rating 20, user, 'Lager'
-      create_beer_with_rating 19, user, 'Porter'
+      create_beer_with_rating(20, user, Style.create(name: 'Lager'))
+      create_beer_with_rating(19, user, Style.create(name: 'Porter'))
       visit user_path(user)
 
       expect(page).to have_content 'Favorite style is Lager'
@@ -32,7 +32,7 @@ describe "User" do
 
     it "has a favorite brewery on his/her page" do
       sign_in 'Pekka', 'foobar1'
-      create_beer_with_rating 20, user, 'Lager'
+      create_beer_with_rating 20, user, FactoryGirl.create(:style)
       visit user_path(user)
 
       expect(page).to have_content 'favorite brewery is anonymous'

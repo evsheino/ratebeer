@@ -7,6 +7,6 @@ class Rating < ActiveRecord::Base
                                       :only_integer => true }
 
   def to_s
-    "#{beer.name} #{score}"
+    "#{beer} #{score}"
   end
 end

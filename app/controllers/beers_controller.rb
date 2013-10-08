@@ -1,8 +1,6 @@
 class BeersController < ApplicationController
   before_filter :ensure_that_signed_in, :except => [:index, :show]
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
-  before_action :set_styles, only: [:new, :create]
-  before_action :set_breweries, only: [:new, :create]
 
   # GET /beers
   # GET /beers.json
@@ -25,10 +23,14 @@ class BeersController < ApplicationController
   # GET /beers/new
   def new
     @beer = Beer.new
+    set_styles
+    set_breweries
   end
 
   # GET /beers/1/edit
   def edit
+    set_styles
+    set_breweries
   end
 
   # POST /beers
@@ -41,6 +43,8 @@ class BeersController < ApplicationController
         format.html { redirect_to beers_path, notice: 'Beer was successfully created.' }
         format.json { render action: 'show', status: :created, location: @beer }
       else
+        set_styles
+        set_breweries
         format.html { render action: 'new' }
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
@@ -55,6 +59,8 @@ class BeersController < ApplicationController
         format.html { redirect_to @beer, notice: 'Beer was successfully updated.' }
         format.json { head :no_content }
       else
+        set_styles
+        set_breweries
         format.html { render action: 'edit' }
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
@@ -78,7 +84,7 @@ class BeersController < ApplicationController
     end
 
     def set_styles
-      @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
+      @styles = Style.all
     end
 
     def set_breweries
@@ -87,6 +93,6 @@ class BeersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def beer_params
-      params.require(:beer).permit(:name, :style, :brewery_id)
+      params.require(:beer).permit(:name, :style_id, :brewery_id)
     end
 end

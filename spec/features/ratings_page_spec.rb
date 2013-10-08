@@ -14,7 +14,7 @@ describe "Ratings page" do
       user = FactoryGirl.create(:user)
       ratings = [20, 30, 25, 40]
       ratings.each do |rating|
-        create_beer_with_rating rating, user, 'Lager'
+        create_beer_with_rating(rating, user, Style.create(name: 'Lager'))
       end
       visit ratings_path
       expect(page).to have_content "Total number of ratings: 4"

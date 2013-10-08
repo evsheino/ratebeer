@@ -27,7 +27,7 @@ describe "Rating" do
   end
 
   it "is deleted when the rater deletes it" do
-    create_beer_with_rating 20, user, 'Lager'
+    create_beer_with_rating(20, user, Style.create(name: 'Lager'))
 
     visit user_path(user)
     expect{click_link 'Delete'}.to change{Rating.count}.from(1).to(0)

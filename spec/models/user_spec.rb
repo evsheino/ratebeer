@@ -62,8 +62,9 @@ describe User do
     end
 
     it "is the one with highest rating if several rated" do
-      create_beers_with_ratings 10, 20, 15, 7, 9, user, "Lager"
-      best = create_beer_with_rating 25, user, "Lager"
+      style = Style.create(name: 'Lager')
+      create_beers_with_ratings 10, 20, 15, 7, 9, user, style
+      best = create_beer_with_rating(25, user, Style.create(name: "Lager"))
 
       expect(user.favorite_beer).to eq(best)
     end
@@ -81,17 +82,19 @@ describe User do
     end
 
     it "is the style of the rated beer if there is only one rating" do
-      create_beer_with_rating(20, user, "Lager")
+      style = Style.create(name: "Lager")
+      create_beer_with_rating(20, user, style)
 
-      expect(user.favorite_style).to eq("Lager")
+      expect(user.favorite_style).to eq(style)
     end
 
     it "is the style with the highest average rating if several beers are rated" do
-      create_beers_with_ratings 10, 20, 15, 7, 9, user, "Lager"
-      create_beers_with_ratings 10, 20, 15, 7, 50, user, "Stout"
-      create_beers_with_ratings 10, 20, 15, 7, 30, user, "Porter"
+      stout = Style.create(name: "Stout")
+      create_beers_with_ratings(10, 20, 15, 7, 9, user, Style.create(name: "Lager"))
+      create_beers_with_ratings(10, 20, 15, 7, 50, user, stout)
+      create_beers_with_ratings(10, 20, 15, 7, 30, user, Style.create(name: "Porter"))
 
-      expect(user.favorite_style).to eq("Stout")
+      expect(user.favorite_style).to eq(stout)
     end
   end
 
@@ -108,7 +111,7 @@ describe User do
 
     it "is the brewery of the rated beer if there is only one rating" do
       brewery = FactoryGirl.create(:brewery)
-      brewery.beers << create_beer_with_rating(20, user, 'Lager')
+      brewery.beers << create_beer_with_rating(20, user, Style.create(name: 'Lager'))
 
       expect(user.favorite_brewery).to eq(brewery)
     end
@@ -118,9 +121,9 @@ describe User do
       brewery2 = FactoryGirl.create(:brewery)
       brewery3 = FactoryGirl.create(:brewery)
 
-      brewery.beers << create_beers_with_ratings(10, 20, 15, 7, 9, user, "Lager")
-      brewery2.beers << create_beers_with_ratings(10, 20, 15, 7, 50, user, "Stout")
-      brewery3.beers << create_beers_with_ratings(10, 20, 15, 7, 30, user, "Porter")
+      brewery.beers << create_beers_with_ratings(10, 20, 15, 7, 9, user, Style.create(name: "Lager"))
+      brewery2.beers << create_beers_with_ratings(10, 20, 15, 7, 50, user, Style.create(name: "Stout"))
+      brewery3.beers << create_beers_with_ratings(10, 20, 15, 7, 30, user, Style.create(name: "Porter"))
 
       expect(user.favorite_brewery).to eq(brewery2)
     end

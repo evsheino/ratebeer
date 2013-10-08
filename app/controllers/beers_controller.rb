@@ -11,6 +11,13 @@ class BeersController < ApplicationController
   # GET /beers/1
   # GET /beers/1.json
   def show
+    @rating = Rating.new
+    @rating.beer = @beer
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @beer }
+    end
   end
 
   # GET /beers/new

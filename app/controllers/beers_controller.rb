@@ -2,10 +2,18 @@ class BeersController < ApplicationController
   before_filter :ensure_that_signed_in, :except => [:index, :show]
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
 
+  ALLOWED_SORT_PARAMS = ['name', 'brewery', 'style']
+
   # GET /beers
   # GET /beers.json
   def index
-    @beers = Beer.all
+    order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
+    @beers = Beer.all.sort_by{ |b| b.send(order) }
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @beers }
+  end
   end
 
   # GET /beers/1

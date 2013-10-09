@@ -2,10 +2,13 @@ class BreweriesController < ApplicationController
   before_filter :ensure_that_admin, :only => [:destroy]
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
 
+  ALLOWED_SORT_PARAMS = ['name', 'year']
+
   # GET /breweries
   # GET /breweries.json
   def index
-    @breweries = Brewery.all
+    order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
+    @breweries = Brewery.all.sort_by{ |b| b.send(order) }
   end
 
   # GET /breweries/1

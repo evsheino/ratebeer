@@ -33,4 +33,29 @@ describe "Beerlist page" do
     visit beerlist_path
     expect(page).to have_content "Nikolai"
   end
+
+  it "shows the beers in alphabetical order at first", :js => true do
+    visit beerlist_path
+    check_order(['Fastenbier', 'Lechte Weisse', 'Nikolai'])
+  end
+
+  it "shows the beers in style order after sorting by style", :js => true do
+    visit beerlist_path
+    click_link 'Style'
+    check_order(['Lager', 'Rauchbier', 'Weizen'])
+  end
+
+  it "shows the beers in brewery order after sorting by brewery", :js => true do
+    visit beerlist_path
+    click_link 'Brewery'
+    check_order(['Ayinger', 'Koff', 'Schlenkerla'])
+  end
+
+  def check_order(list)
+    i = 2
+    list.each  do |item|
+      find('table').find("tr:nth-child(#{i})").should have_content("#{item}")
+      i += 1
+    end
+  end
 end

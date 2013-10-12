@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-12T14:26:09+03:00">2013-10-12T14:26:09+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-12T15:15:03+03:00">2013-10-12T15:15:03+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">90.07%</span></span>
+    (<span class="covered_percent"><span class="green">90.23%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.82
+         1.88
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>61</b> files in total.
-    <b>755</b> relevant lines. 
-    <span class="green"><b>680</b> lines covered</span> and
+    <b>60</b> files in total.
+    <b>768</b> relevant lines. 
+    <span class="green"><b>693</b> lines covered</span> and
     <span class="red"><b>75</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -67,7 +67,7 @@
         <td>57</td>
         <td>33</td>
         <td>24</td>
-        <td>0.8</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -197,7 +197,7 @@
         <td>9</td>
         <td>8</td>
         <td>1</td>
-        <td>16.0</td>
+        <td>16.3</td>
       </tr>
       
       <tr>
@@ -247,7 +247,7 @@
         <td>13</td>
         <td>12</td>
         <td>1</td>
-        <td>6.5</td>
+        <td>7.2</td>
       </tr>
       
       <tr>
@@ -463,11 +463,11 @@
       <tr>
         <td class="strong"><a href="#cd87899b0fad205b1d1b45253465c72003a20657" class="src_link" title="spec/features/beerlist_spec.rb">spec/features/beerlist_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
-        <td>24</td>
-        <td>24</td>
+        <td>61</td>
+        <td>40</td>
+        <td>40</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
@@ -528,16 +528,6 @@
         <td>32</td>
         <td>0</td>
         <td>1.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#b65c4cd289aa63c22d5071ca1713c5d2de97aad8" class="src_link" title="spec/helpers/styles_helper_spec.rb">spec/helpers/styles_helper_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
       </tr>
       
       <tr>
@@ -804,14 +794,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="10">
+          <span class="hits">5</span>
           
           <code class="ruby">    order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : &#39;name&#39;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="11">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="18" data-linenumber="11">
+          <span class="hits">18</span>
           
           <code class="ruby">    @beers = Beer.all.sort_by{ |b| b.send(order) }</code>
         </li>
@@ -822,20 +812,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="13">
+          <span class="hits">5</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="14">
+          <span class="hits">5</span>
           
           <code class="ruby">      format.html # index.html.erb</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="15">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="15">
+          <span class="hits">9</span>
           
           <code class="ruby">      format.json { render :json =&gt; @beers, :methods =&gt; [ :brewery, :style ] }</code>
         </li>
@@ -3588,8 +3578,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="105" data-linenumber="3">
-          <span class="hits">105</span>
+        <li class="covered" data-hits="108" data-linenumber="3">
+          <span class="hits">108</span>
           
           <code class="ruby">    return User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -4008,8 +3998,8 @@
           <code class="ruby">  def validate_year</code>
         </li>
       
-        <li class="covered" data-hits="69" data-linenumber="13">
-          <span class="hits">69</span>
+        <li class="covered" data-hits="78" data-linenumber="13">
+          <span class="hits">78</span>
           
           <code class="ruby">    if 1042 &gt; year || year &gt; Date.today.year</code>
         </li>
@@ -6975,8 +6965,8 @@
     <h3>spec/features/beerlist_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>24</b> relevant lines. 
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>40</b> relevant lines. 
+      <span class="green"><b>40</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7038,14 +7028,14 @@
           <code class="ruby">  before :each do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
           <code class="ruby">    DatabaseCleaner.strategy = :truncation</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
           
           <code class="ruby">    DatabaseCleaner.start</code>
         </li>
@@ -7056,56 +7046,56 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
           
           <code class="ruby">    @brewery1 = FactoryGirl.create(:brewery, :name =&gt; &quot;Koff&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="14">
+          <span class="hits">4</span>
           
           <code class="ruby">    @brewery2 = FactoryGirl.create(:brewery, :name =&gt; &quot;Schlenkerla&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
           
           <code class="ruby">    @brewery3 = FactoryGirl.create(:brewery, :name =&gt; &quot;Ayinger&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
           
           <code class="ruby">    @style1 = Style.create :name=&gt;&quot;Lager&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="17">
+          <span class="hits">4</span>
           
           <code class="ruby">    @style2 = Style.create :name=&gt;&quot;Rauchbier&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
           
           <code class="ruby">    @style3 = Style.create :name=&gt;&quot;Weizen&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="19">
+          <span class="hits">4</span>
           
           <code class="ruby">    @beer1 = FactoryGirl.create(:beer, :name =&gt; &quot;Nikolai&quot;, :brewery =&gt; @brewery1, :style =&gt; @style1)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="20">
+          <span class="hits">4</span>
           
           <code class="ruby">    @beer2 = FactoryGirl.create(:beer, :name =&gt; &quot;Fastenbier&quot;, :brewery =&gt; @brewery2, :style =&gt; @style2)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="21">
+          <span class="hits">4</span>
           
           <code class="ruby">    @beer3 = FactoryGirl.create(:beer, :name =&gt; &quot;Lechte Weisse&quot;, :brewery =&gt; @brewery3, :style =&gt; @style3)</code>
         </li>
@@ -7128,8 +7118,8 @@
           <code class="ruby">  after :each do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="25">
+          <span class="hits">4</span>
           
           <code class="ruby">    DatabaseCleaner.clean</code>
         </li>
@@ -7195,6 +7185,156 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;shows the beers in alphabetical order at first&quot;, :js =&gt; true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit beerlist_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    check_order([&#39;Fastenbier&#39;, &#39;Lechte Weisse&#39;, &#39;Nikolai&#39;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;shows the beers in style order after sorting by style&quot;, :js =&gt; true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit beerlist_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Style&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    check_order([&#39;Lager&#39;, &#39;Rauchbier&#39;, &#39;Weizen&#39;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;shows the beers in brewery order after sorting by brewery&quot;, :js =&gt; true do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit beerlist_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &#39;Brewery&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    check_order([&#39;Ayinger&#39;, &#39;Koff&#39;, &#39;Schlenkerla&#39;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def check_order(list)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    i = 2</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="56">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    list.each  do |item|</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="57">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      find(&#39;table&#39;).find(&quot;tr:nth-child(#{i})&quot;).should have_content(&quot;#{item}&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="58">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      i += 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">end</code>
@@ -8551,114 +8691,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="b65c4cd289aa63c22d5071ca1713c5d2de97aad8">
-  <div class="header">
-    <h3>spec/helpers/styles_helper_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;spec_helper&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"># Specs in this file have access to a helper object that includes</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"># the StylesHelper. For example:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">#</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"># describe StylesHelper do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">#   describe &quot;string concat&quot; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">#     it &quot;concats two strings with spaces&quot; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">#       expect(helper.concat_strings(&quot;this&quot;,&quot;that&quot;)).to eq(&quot;this that&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">#     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"># end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">describe StylesHelper do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>

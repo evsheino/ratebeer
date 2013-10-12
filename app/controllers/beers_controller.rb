@@ -1,5 +1,5 @@
 class BeersController < ApplicationController
-  before_filter :ensure_that_signed_in, :except => [:index, :show]
+  before_filter :ensure_that_signed_in, :except => [:index, :show, :list]
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
 
   ALLOWED_SORT_PARAMS = ['name', 'brewery', 'style']
@@ -12,8 +12,11 @@ class BeersController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @beers }
+      format.json { render :json => @beers, :methods => [ :brewery, :style ] }
   end
+  end
+
+  def list
   end
 
   # GET /beers/1

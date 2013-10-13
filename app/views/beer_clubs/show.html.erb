@@ -24,10 +24,10 @@
 <%= form_for(@membership) do |f| %>
     <%= f.hidden_field :beer_club_id %>
     <%= f.hidden_field :user_id %>
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-primary' %>
 <% end %>
 
-<%= link_to 'Edit', edit_beer_club_path(@beer_club) %> |
-<%= link_to 'Destroy', @beer_club, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_beer_club_path(@beer_club), class: 'btn btn-primary' %> |
+<%= link_to 'Destroy', @beer_club, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-danger' %>
 <br/>
 <%= link_to 'Back', beer_clubs_path %>

@@ -8,7 +8,7 @@
   <% @user.ratings.each do |rating| %>
       <li> <%= rating %>
       <% if signed_in?(@user) %>
-        <%= link_to 'Delete', rating, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+        <%= link_to 'Delete', rating, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %> </li>
       <% end %>
   <% end %>
 </ul>
@@ -21,7 +21,7 @@
 </p>
 
 <% if signed_in?(@user) %>
-    <%= link_to 'Edit', edit_user_path(@user) %> |
-    <td><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
+    <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %> |
+    <td><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td> |
 <% end %>
 <%= link_to 'Back', users_path %>

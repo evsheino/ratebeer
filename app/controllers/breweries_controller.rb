@@ -8,7 +8,8 @@ class BreweriesController < ApplicationController
   # GET /breweries.json
   def index
     order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
-    @breweries = Brewery.all.sort_by{ |b| b.send(order) }
+    @active_breweries = Brewery.active.sort_by{ |b| b.send(order) }
+    @retired_breweries = Brewery.retired.sort_by{ |b| b.send(order) }
   end
 
   # GET /breweries/1
@@ -74,6 +75,6 @@ class BreweriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def brewery_params
-      params.require(:brewery).permit(:name, :year)
+      params.require(:brewery).permit(:name, :year, :active)
     end
 end

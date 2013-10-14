@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131013215329) do
+ActiveRecord::Schema.define(version: 20131014131536) do
 
   create_table "beer_clubs", force: true do |t|
     t.string   "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20131013215329) do
     t.integer  "beer_club_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "confirmed"
   end
 
   add_index "memberships", ["user_id", "beer_club_id"], name: "index_memberships_on_user_id_and_beer_club_id", unique: true

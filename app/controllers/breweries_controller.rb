@@ -1,6 +1,6 @@
 class BreweriesController < ApplicationController
   before_filter :ensure_that_admin, :only => [:destroy]
-  before_action :set_brewery, only: [:show, :edit, :update, :destroy]
+  before_action :set_brewery, only: [:show, :edit, :update, :destroy, :toggle_activity]
 
   ALLOWED_SORT_PARAMS = ['name', 'year']
 
@@ -67,8 +67,7 @@ class BreweriesController < ApplicationController
   end
 
   def toggle_activity
-    brewery = Brewery.find(params[:id])
-    brewery.update_attribute :active, (not brewery.active)
+    @brewery.update_attribute :active, (not @brewery.active)
 
     new_status = brewery.active? ? "active" : "retired"
 

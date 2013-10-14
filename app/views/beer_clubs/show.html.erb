@@ -13,17 +13,29 @@
   <%= @beer_club.city %>
 </p>
 
-<strong>Members:</strong>
-<p>
-  <% @beer_club.users.each do |user| %>
-      <%= link_to user, user %>
+<h3>Members</h3>
+<ul>
+  <% @beer_club.memberships.confirmed.each do |membership| %>
+      <li><%= link_to membership.user, membership.user %></li>
   <% end %>
-</p>
+</ul>
+
+<% if @beer_club.confirmed_members.include?(current_user) %>
+    <h3>Pending membership</h3>
+    <ul>
+      <% @beer_club.memberships.pending.each do |membership| %>
+          <li>
+            <%= link_to membership.user, membership.user %>
+            <%= link_to 'Confirm', confirm_membership_membership_path(membership.id),
+                        method: :post, class: 'btn btn-primary' %>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
 
 <strong>Join this club!</strong>
 <%= form_for(@membership) do |f| %>
     <%= f.hidden_field :beer_club_id %>
-    <%= f.hidden_field :user_id %>
     <%= f.submit class: 'btn btn-primary' %>
 <% end %>
 

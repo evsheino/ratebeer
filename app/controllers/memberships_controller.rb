@@ -1,5 +1,13 @@
 class MembershipsController < ApplicationController
-  before_action :set_membership, only: [:show, :edit, :update, :destroy]
+  before_action :set_membership, only: [:show, :edit, :update, :destroy, :confirm_membership]
+
+  def confirm_membership
+    return unless @membership.beer_club.confirmed_members.include?(current_user)
+
+    @membership.update_attribute :confirmed, true
+
+    redirect_to :back, :notice => "Membership confirmed"
+  end
 
   # GET /memberships
   # GET /memberships.json
@@ -42,6 +50,8 @@ class MembershipsController < ApplicationController
   # PATCH/PUT /memberships/1
   # PATCH/PUT /memberships/1.json
   def update
+    # Only allow other members of the beer club to edit memberships.
+    return unless @membership.beer_club.confirmed_members.include?(current_user)
     respond_to do |format|
       if @membership.update(membership_params)
         format.html { redirect_to @membership, notice: 'Membership was successfully updated.' }
@@ -71,6 +81,6 @@ class MembershipsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def membership_params
-      params.require(:membership).permit(:user_id, :beer_club_id)
+      params.require(:membership).permit(:user_id, :beer_club_id, :confirmed)
     end
 end

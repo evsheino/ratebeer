@@ -2,7 +2,9 @@ Ratebeer::Application.routes.draw do
 
   resources :styles
 
-  resources :memberships
+  resources :memberships do
+    post 'confirm_membership', :on => :member
+  end
 
   resources :beer_clubs
 

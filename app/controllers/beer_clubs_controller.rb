@@ -28,7 +28,8 @@ class BeerClubsController < ApplicationController
     @beer_club = BeerClub.new(beer_club_params)
 
     respond_to do |format|
-      if @beer_club.save
+      if user_signed_in? && @beer_club.save
+        Membership.create(user: current_user, beer_club: @beer_club, confirmed: true)
         format.html { redirect_to @beer_club, notice: 'Beer club was successfully created.' }
         format.json { render action: 'show', status: :created, location: @beer_club }
       else
@@ -65,7 +66,7 @@ class BeerClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_beer_club
-      @beer_club = BeerClub.find(params[:id])
+      @beer_club = BeerClub.includes(memberships: :user).find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -13,14 +13,20 @@
   <% end %>
 </ul>
 
-<strong>Member of:</strong>
-<p>
-  <% @user.beer_clubs.each do |club| %>
-    <%= link_to club, club %>
+<h3>Beer Clubs</h3>
+<ul>
+  <% @user.beer_clubs_where_confirmed_member.each do |club| %>
+    <li><%= link_to club, club %></li>
   <% end %>
-</p>
+</ul>
 
 <% if signed_in?(@user) %>
+    <h3>Pending Applications</h3>
+    <ul>
+      <% @user.beer_clubs_where_application_pending.each do |club| %>
+          <li><%= link_to club, club %></li>
+      <% end %>
+    </ul>
     <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %> |
     <td><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td> |
 <% end %>

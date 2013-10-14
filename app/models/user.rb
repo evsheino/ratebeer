@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
   has_many :beers, through: :ratings
   has_many :memberships, dependent: :destroy
   has_many :beer_clubs, through: :memberships
+  has_many :confirmed_memberships, -> {confirmed}, class_name: 'Membership'
+  has_many :pending_memberships, -> {pending}, class_name: 'Membership'
+  has_many :beer_clubs_where_confirmed_member, through: :confirmed_memberships, source: :beer_club
+  has_many :beer_clubs_where_application_pending, through: :pending_memberships, source: :beer_club
 
   has_secure_password
 
@@ -45,12 +49,6 @@ class User < ActiveRecord::Base
         having('users.id = ?', id).
         order('SUM(score)/COUNT(score) DESC').
         first
-  end
-
-  def brewery_rating_average(brewery)
-    ratings_of_brewery = ratings.select{ |r|r.beer.brewery==brewery }
-    return 0 if ratings_of_brewery.empty?
-    ratings_of_brewery.inject(0.0){ |sum ,r| sum+r.score } / ratings_of_brewery.count
   end
 
   def to_s

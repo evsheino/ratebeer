@@ -9,8 +9,8 @@ class Beer < ActiveRecord::Base
   validates_presence_of :name
   validates_presence_of :style_id
 
-  # Select the n top rated beers ranked by average rating score,
-  # including the average scores.
+  # Select the n top rated beers ranked by average rating score.
+  # Includes the average scores.
   def self.top(n)
     joins(:ratings).
         select('beers.*', 'SUM(score)/COUNT(score) AS average_score').

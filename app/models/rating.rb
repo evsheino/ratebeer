@@ -6,7 +6,7 @@ class Rating < ActiveRecord::Base
                                       :less_than_or_equal_to => 50,
                                       :only_integer => true }
 
-  scope :recent, -> {order("created_at DESC").limit(3)}
+  scope :recent, -> {includes({beer: :brewery}, :user).order("created_at DESC").limit(3)}
 
   def to_s
     "#{beer} #{score}"

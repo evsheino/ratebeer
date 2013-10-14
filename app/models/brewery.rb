@@ -12,8 +12,8 @@ class Brewery < ActiveRecord::Base
   scope :active, -> { where(active: true) }
   scope :retired, -> { where(active: [nil, false]) }
 
-  # Select the n top rated breweries ranked by average rating score,
-  # including the average scores.
+  # Select the n top rated breweries ranked by average rating score.
+  # Includes the average scores.
   def self.top(n)
     joins(:ratings).
         select('breweries.*', 'SUM(score)/COUNT(score) AS average_score').

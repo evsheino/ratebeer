@@ -1,0 +1,14 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Average</th>
+  </tr>
+  </thead>
+  <% records.each do |record| %>
+      <tr>
+        <td><%= link_to record, record %></td>
+        <td><%= record.average_score %></td>
+      </tr>
+  <% end %>
+</table>

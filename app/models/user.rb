@@ -13,6 +13,17 @@ class User < ActiveRecord::Base
                                    message: "must be at least 4 characters and include one number and one letter."}
   validates_length_of :username, :minimum => 3, :maximum => 15
 
+  # Order by rating count and include rating count.
+  def self.order_by_activity
+    select('users.*', 'COUNT(ratings.id) AS rating_count').
+        joins('LEFT OUTER JOIN ratings ON users.id = ratings.user_id').
+        group('users.id').order('rating_count DESC')
+  end
+
+  def self.top(n)
+    order_by_activity.limit(n)
+  end
+
   def favorite_beer
     return nil if ratings.empty?
     ratings.order(:score).last.beer

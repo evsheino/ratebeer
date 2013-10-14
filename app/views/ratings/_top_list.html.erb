@@ -8,7 +8,7 @@
   <% records.each do |record| %>
       <tr>
         <td><%= link_to record, record %></td>
-        <td><%= record.average_score %></td>
+        <td><%= round(record.average_score) %></td>
       </tr>
   <% end %>
 </table>

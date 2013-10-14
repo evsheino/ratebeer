@@ -4,6 +4,9 @@
   <% end %>
 </h2>
 
+<%= link_to "change activity", toggle_activity_brewery_path(@brewery.id),
+            :method => :post, :class => "btn btn-primary" %>
+
 <p>
   <em>Established in <%= @brewery.year %></em>
 </p>
@@ -17,7 +20,7 @@
 </ul>
 
 <% unless @brewery.ratings.empty? %>
-  <p>beers of the brewery have <%= pluralize(@brewery.ratings.count, 'rating') %>, average <%= @brewery.average_rating %></p>
+  <p>beers of the brewery have <%= pluralize(@brewery.ratings.count, 'rating') %>, average <%= round(@brewery.average_rating) %></p>
 <% end %>
 
 <%= link_to('Edit', edit_brewery_path(@brewery), :class => "btn btn-primary") if user_signed_in? %>

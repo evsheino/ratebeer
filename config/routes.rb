@@ -19,7 +19,9 @@ Ratebeer::Application.routes.draw do
 
   resources :beers
 
-  resources :breweries
+  resources :breweries do
+    post 'toggle_activity', :on => :member
+  end
 
   resources :places, :only => [:index, :show]
   post 'places' => 'places#search'

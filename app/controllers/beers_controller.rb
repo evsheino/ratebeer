@@ -7,13 +7,13 @@ class BeersController < ApplicationController
   # GET /beers
   # GET /beers.json
   def index
-    order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
-    @beers = Beer.all.includes(:style, :brewery).sort_by{ |b| b.send(order) }
+    @order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
+    @beers = Beer.all.includes(:style, :brewery).sort_by{ |b| b.send(@order) }
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @beers, :methods => [ :brewery, :style ] }
-  end
+    end
   end
 
   def list

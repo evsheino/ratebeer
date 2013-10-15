@@ -1,5 +1,6 @@
 <h1>Listing beers</h1>
 
+<% cache(cache_key_for_beers(@order)) do %>
 <table class="table table-hover">
   <thead>
   <tr>
@@ -19,7 +20,7 @@
     <% end %>
   </tbody>
 </table>
-
+<% end %>
 <br>
 
-<%= link_to('New Beer', new_beer_path, class: 'btn btn-primary') if current_user %>
+<%= link_to('New Beer', new_beer_path, class: 'btn btn-primary') if user_signed_in? %>

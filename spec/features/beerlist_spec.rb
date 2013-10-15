@@ -52,9 +52,9 @@ describe "Beerlist page" do
   end
 
   def check_order(list)
-    i = 2
+    i = 1
     list.each  do |item|
-      find('table').find("tr:nth-child(#{i})").should have_content("#{item}")
+      find('table').find('tbody').find("tr:nth-child(#{i})").should have_content("#{item}")
       i += 1
     end
   end

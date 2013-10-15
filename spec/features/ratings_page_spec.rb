@@ -10,7 +10,7 @@ describe "Ratings page" do
   end
 
   describe "when ratings exists" do
-    it "lists the ratings and their total number" do
+    it "lists recent ratings and the total number of ratings" do
       user = FactoryGirl.create(:user)
       ratings = [20, 30, 25, 40]
       ratings.each do |rating|
@@ -18,7 +18,7 @@ describe "Ratings page" do
       end
       visit ratings_path
       expect(page).to have_content "Total number of ratings: 4"
-      ratings.each do |rating|
+      ratings[1..3].each do |rating|
         expect(page).to have_content rating
       end
     end

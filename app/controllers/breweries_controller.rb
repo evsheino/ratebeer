@@ -2,14 +2,11 @@ class BreweriesController < ApplicationController
   before_filter :ensure_that_admin, :only => [:destroy]
   before_action :set_brewery, only: [:show, :edit, :update, :destroy, :toggle_activity]
 
-  ALLOWED_SORT_PARAMS = ['name', 'year']
-
   # GET /breweries
   # GET /breweries.json
   def index
-    order = ALLOWED_SORT_PARAMS.include?(params[:order]) ? params[:order] : 'name'
-    @active_breweries = Brewery.active.sort_by{ |b| b.send(order) }
-    @retired_breweries = Brewery.retired.sort_by{ |b| b.send(order) }
+    @active_breweries = Brewery.active
+    @retired_breweries = Brewery.retired
   end
 
   # GET /breweries/1

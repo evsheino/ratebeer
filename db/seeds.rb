@@ -1,7 +1,7 @@
-users = 100
-breweries = 50
-beers_in_brewery = 50
-ratings_per_user = 30
+users = 1000
+breweries = 500
+beers_in_brewery = 500
+ratings_per_user = 300
 
 (1..users).each do |i|
   User.create :username => "user_#{i}", :password => "passwd1", :password_confirmation => "passwd1"

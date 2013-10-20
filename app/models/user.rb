@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
     return nil if ratings.empty?
     Style.joins(:raters).group('users.id', :id).
         having('users.id = ?', id).
-        order('SUM(score)/COUNT(score) DESC').
+        order('AVG(score) DESC').
         first
   end
 
@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
     return nil if ratings.empty?
     Brewery.joins(:raters).group('users.id', :id).
         having('users.id = ?', id).
-        order('SUM(score)/COUNT(score) DESC').
+        order('AVG(score) DESC').
         first
   end
 

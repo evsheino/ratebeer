@@ -13,7 +13,7 @@ class Beer < ActiveRecord::Base
   # Includes the average scores.
   def self.top(n)
     joins(:ratings).includes(:brewery).
-        select('beers.*', 'SUM(score)/COUNT(score) AS average_score').
+        select('beers.*', 'AVG(score) AS average_score').
         group('beers.id').order('average_score DESC').limit(n)
   end
 

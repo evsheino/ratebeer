@@ -6,7 +6,7 @@ class Style < ActiveRecord::Base
 
   def self.top(n)
     joins(:ratings).
-        select('styles.*', 'SUM(score)/COUNT(score) AS average_score').
+        select('styles.*', 'AVG(score) AS average_score').
         group('styles.id').order('average_score DESC').limit(n)
   end
 

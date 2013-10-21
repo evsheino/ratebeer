@@ -7,23 +7,16 @@ class RatingsController < ApplicationController
   TOP_STYLES_CACHE_KEY = 'styles/top'
   TOP_USERS_CACHE_KEY = 'users/top'
 
-  def top_users
-   @users = User.top 3
-   respond_to do |format|
-     format.json {render json: @users, methods: [:favorite_beer, :favorite_brewery, :favorite_style, :rating_count]}
-   end
-  end
-
   def index
     Rails.cache.write(TOP_BREWERIES_CACHE_KEY, Brewery.top(3)) unless Rails.cache.exist?(TOP_BREWERIES_CACHE_KEY)
     Rails.cache.write(TOP_BEERS_CACHE_KEY, Beer.top(3)) unless Rails.cache.exist?(TOP_BEERS_CACHE_KEY)
     Rails.cache.write(TOP_STYLES_CACHE_KEY, Style.top(3)) unless Rails.cache.exist?(TOP_STYLES_CACHE_KEY)
-    #Rails.cache.write(TOP_USERS_CACHE_KEY, User.top(3)) unless Rails.cache.exist?(TOP_USERS_CACHE_KEY)
+    Rails.cache.write(TOP_USERS_CACHE_KEY, User.top(3)) unless Rails.cache.exist?(TOP_USERS_CACHE_KEY)
 
     @ratings = Rating.all
     @recent_ratings = Rating.recent
 
-    #@top_users = Rails.cache.read(TOP_USERS_CACHE_KEY)
+    @top_users = Rails.cache.read(TOP_USERS_CACHE_KEY)
     @top_breweries = Rails.cache.read(TOP_BREWERIES_CACHE_KEY)
     @top_styles = Rails.cache.read(TOP_STYLES_CACHE_KEY)
     @top_beers = Rails.cache.read(TOP_BEERS_CACHE_KEY)

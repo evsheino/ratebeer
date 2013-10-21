@@ -8,5 +8,13 @@
     <th>Ratings</th>
   </tr>
   </thead>
+    <% users.each do |user| %>
+      <tr>
+        <td><%= link_to user, user %></td>
+        <td><%= user.favorite_beer %></td>
+        <td><%= user.favorite_brewery %></td>
+        <td><%= user.favorite_style %></td>
+        <td><%= user.rating_count %></td>
+      </tr>
+  <% end %>
 </table>
-<div id="users-loading"><%= image_tag "ajax-loader.gif" %></div>

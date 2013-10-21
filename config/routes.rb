@@ -18,7 +18,6 @@ Ratebeer::Application.routes.draw do
   root :to => 'breweries#index'
 
   resources :ratings, :only => [:index, :new, :create, :destroy]
-  get 'top_users' => 'ratings#top_users'
 
   resources :beers
 
